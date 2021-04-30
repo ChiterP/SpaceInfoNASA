@@ -56,15 +56,55 @@
 		43F702C1263C1E57008210D0 /* SpaceInfoNASA */ = {
 			isa = PBXGroup;
 			children = (
-				43F702C2263C1E57008210D0 /* AppDelegate.swift */,
-				43F702C4263C1E57008210D0 /* SceneDelegate.swift */,
-				43F702C6263C1E57008210D0 /* ViewController.swift */,
-				43F702C8263C1E57008210D0 /* Main.storyboard */,
-				43F702CB263C1E58008210D0 /* Assets.xcassets */,
-				43F702CD263C1E58008210D0 /* LaunchScreen.storyboard */,
-				43F702D0263C1E58008210D0 /* Info.plist */,
+				43F702DA263C3E67008210D0 /* Models */,
+				43F702D6263C1E95008210D0 /* Supporting */,
+				43F702D7263C1EA1008210D0 /* ViewControllers */,
+				43F702D9263C1EC3008210D0 /* Srotyboards */,
+				43F702D8263C1EAF008210D0 /* Resources */,
 			);
 			path = SpaceInfoNASA;
+			sourceTree = "<group>";
+		};
+		43F702D6263C1E95008210D0 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				43F702D0263C1E58008210D0 /* Info.plist */,
+				43F702C2263C1E57008210D0 /* AppDelegate.swift */,
+				43F702C4263C1E57008210D0 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		43F702D7263C1EA1008210D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43F702C6263C1E57008210D0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43F702D8263C1EAF008210D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43F702CB263C1E58008210D0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43F702D9263C1EC3008210D0 /* Srotyboards */ = {
+			isa = PBXGroup;
+			children = (
+				43F702CD263C1E58008210D0 /* LaunchScreen.storyboard */,
+				43F702C8263C1E57008210D0 /* Main.storyboard */,
+			);
+			path = Srotyboards;
+			sourceTree = "<group>";
+		};
+		43F702DA263C3E67008210D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7L83V7V4P;
-				INFOPLIST_FILE = SpaceInfoNASA/Info.plist;
+				INFOPLIST_FILE = SpaceInfoNASA/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7L83V7V4P;
-				INFOPLIST_FILE = SpaceInfoNASA/Info.plist;
+				INFOPLIST_FILE = SpaceInfoNASA/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
