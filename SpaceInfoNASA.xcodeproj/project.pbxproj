@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CDDDE9263CA642008A0766 /* MainCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDDDE8263CA642008A0766 /* MainCollectionVC.swift */; };
 		43F702C3263C1E57008210D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F702C2263C1E57008210D0 /* AppDelegate.swift */; };
 		43F702C5263C1E57008210D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F702C4263C1E57008210D0 /* SceneDelegate.swift */; };
-		43F702C7263C1E57008210D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F702C6263C1E57008210D0 /* ViewController.swift */; };
 		43F702CA263C1E57008210D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F702C8263C1E57008210D0 /* Main.storyboard */; };
 		43F702CC263C1E58008210D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F702CB263C1E58008210D0 /* Assets.xcassets */; };
 		43F702CF263C1E58008210D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F702CD263C1E58008210D0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43CDDDE8263CA642008A0766 /* MainCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionVC.swift; sourceTree = "<group>"; };
 		43F702BF263C1E57008210D0 /* SpaceInfoNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceInfoNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F702C2263C1E57008210D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F702C4263C1E57008210D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43F702C6263C1E57008210D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43F702C9263C1E57008210D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43F702CB263C1E58008210D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F702CE263C1E58008210D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		43F702D7263C1EA1008210D0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				43F702C6263C1E57008210D0 /* ViewController.swift */,
+				43CDDDE8263CA642008A0766 /* MainCollectionVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -177,8 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F702C7263C1E57008210D0 /* ViewController.swift in Sources */,
 				43F702C3263C1E57008210D0 /* AppDelegate.swift in Sources */,
+				43CDDDE9263CA642008A0766 /* MainCollectionVC.swift in Sources */,
 				43F702C5263C1E57008210D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Sergeytsev.SpaceInfoNASA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -355,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Sergeytsev.SpaceInfoNASA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
