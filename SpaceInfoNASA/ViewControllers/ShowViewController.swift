@@ -8,10 +8,9 @@
 import UIKit
 
 class ShowViewController: UIViewController {
-
-    let url = "https://api.nasa.gov/planetary/apod?api_key=BZAsfifDGpBcH5byUPkp5n0wCuz381mu1zJ8CHHZ"
-    var imageUrl = ""
     
+    private let url = "https://api.nasa.gov/planetary/apod?api_key=BZAsfifDGpBcH5byUPkp5n0wCuz381mu1zJ8CHHZ"
+    private var imageUrl = ""
     
     @IBOutlet weak var titleLb: UILabel!
     @IBOutlet weak var viewImageLb: UIImageView!
@@ -27,7 +26,6 @@ class ShowViewController: UIViewController {
         activityIndicator.hidesWhenStopped = true
         getDataNasa()
     }
-    
     
     // MARK: - Networking
     private func getDataNasa() {

@@ -14,7 +14,6 @@
 		43F702CF263C1E58008210D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F702CD263C1E58008210D0 /* LaunchScreen.storyboard */; };
 		C1F5977B263F26C800038516 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F5977A263F26C800038516 /* ShowViewController.swift */; };
 		C1F59780263F289500038516 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F5977F263F289500038516 /* Data.swift */; };
-		C1F59783263F421500038516 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F59782263F421500038516 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		43F702D0263C1E58008210D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1F5977A263F26C800038516 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		C1F5977F263F289500038516 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		C1F59782263F421500038516 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 		43F702C1263C1E57008210D0 /* SpaceInfoNASA */ = {
 			isa = PBXGroup;
 			children = (
-				C1F59781263F41FF00038516 /* Network */,
 				C1F5977E263F288900038516 /* Data */,
 				43F702D6263C1E95008210D0 /* Supporting */,
 				43F702D7263C1EA1008210D0 /* ViewControllers */,
@@ -111,14 +108,6 @@
 				C1F5977F263F289500038516 /* Data.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		C1F59781263F41FF00038516 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				C1F59782263F421500038516 /* Network.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +180,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F59783263F421500038516 /* Network.swift in Sources */,
 				43F702C3263C1E57008210D0 /* AppDelegate.swift in Sources */,
 				C1F59780263F289500038516 /* Data.swift in Sources */,
 				43F702C5263C1E57008210D0 /* SceneDelegate.swift in Sources */,
