@@ -14,8 +14,8 @@ class ShowViewController: UIViewController {
     
     @IBOutlet weak var titleLb: UILabel!
     @IBOutlet weak var viewImage: UIImageView!
-    @IBOutlet weak var explanatLb: UILabel!
     @IBOutlet weak var dateLb: UILabel!
+    @IBOutlet weak var scrolText: UITextView!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -25,9 +25,16 @@ class ShowViewController: UIViewController {
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = false
         
+        titleLb.isHidden = true
+        scrolText.isHidden = true
+        dateLb.isHidden = true
+        viewImage.isHidden = true
+        
+        viewImage.layer.cornerRadius = 15
+        
         fetchData(from: URLS.nasaapi.rawValue)
     }
-    
+        
     private func fetchData(from url: String?) {
         NetworkManager.shared.fetchData(from: url) { nasaJson in
             self.nasaJson = nasaJson
@@ -43,7 +50,11 @@ class ShowViewController: UIViewController {
     }
     private func setupView() {
         titleLb.text = nasaJson?.title
-        explanatLb.text = nasaJson?.explanation
+        scrolText.text = nasaJson?.explanation
         dateLb.text = nasaJson?.date
+        viewImage.isHidden = false
+        titleLb.isHidden = false
+        scrolText.isHidden = false
+        dateLb.isHidden = false
     }
 }

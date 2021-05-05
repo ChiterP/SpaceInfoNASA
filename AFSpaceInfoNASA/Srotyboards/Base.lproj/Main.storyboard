@@ -23,15 +23,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="expl" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD8-pA-suN">
-                                <rect key="frame" x="16" y="372.5" width="288" height="159.5"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC4-Po-XVj">
-                                <rect key="frame" x="200" y="536" width="104" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" дата" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC4-Po-XVj">
+                                <rect key="frame" x="226" y="537" width="78" height="21"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,40 +40,46 @@
                                     <constraint firstAttribute="height" constant="316" id="l34-Hb-4kp"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="много текста" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="krE-HQ-e7N">
+                                <rect key="frame" x="15" y="389" width="291" height="149"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Ho-SU-Sum"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
-                            <constraint firstItem="QC4-Po-XVj" firstAttribute="top" secondItem="iD8-pA-suN" secondAttribute="bottom" constant="4" id="3K0-jQ-7Z5"/>
+                            <constraint firstItem="krE-HQ-e7N" firstAttribute="top" secondItem="tNH-Du-Pw2" secondAttribute="bottom" constant="26.5" id="1Sr-iu-YYc"/>
                             <constraint firstItem="GCG-gg-gC8" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="16" id="4wi-0Q-LOr"/>
-                            <constraint firstItem="iD8-pA-suN" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="16" id="6l1-Z8-J5v"/>
                             <constraint firstItem="GCG-gg-gC8" firstAttribute="top" secondItem="3Ho-SU-Sum" secondAttribute="top" constant="16" id="Acx-4k-jVs"/>
+                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="krE-HQ-e7N" secondAttribute="trailing" constant="14" id="Fps-eN-mG6"/>
                             <constraint firstItem="Xrq-dE-Ioi" firstAttribute="centerY" secondItem="3Zz-Al-dsI" secondAttribute="centerY" id="LJe-7F-AzT"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="tNH-Du-Pw2" secondAttribute="trailing" constant="16" id="LKg-VT-EW0"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="QC4-Po-XVj" secondAttribute="trailing" constant="16" id="Qwb-x6-B5B"/>
                             <constraint firstItem="Xrq-dE-Ioi" firstAttribute="centerX" secondItem="3Zz-Al-dsI" secondAttribute="centerX" id="SI5-Oh-nHz"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="GCG-gg-gC8" secondAttribute="trailing" constant="16" id="W9c-9A-qOx"/>
-                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="bottom" secondItem="QC4-Po-XVj" secondAttribute="bottom" constant="11" id="aAy-Bo-vYu"/>
+                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="bottom" secondItem="QC4-Po-XVj" secondAttribute="bottom" constant="10" id="aAy-Bo-vYu"/>
+                            <constraint firstItem="krE-HQ-e7N" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="15" id="eOy-id-6Af"/>
                             <constraint firstItem="tNH-Du-Pw2" firstAttribute="top" secondItem="GCG-gg-gC8" secondAttribute="bottom" constant="10" id="fr5-Qf-C0L"/>
-                            <constraint firstItem="QC4-Po-XVj" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="200" id="gYl-K4-S52"/>
-                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="iD8-pA-suN" secondAttribute="trailing" constant="16" id="j5w-ZD-6XF"/>
+                            <constraint firstItem="QC4-Po-XVj" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="226" id="gYl-K4-S52"/>
                             <constraint firstItem="tNH-Du-Pw2" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="16" id="pm0-1F-t7l"/>
-                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="bottom" secondItem="iD8-pA-suN" secondAttribute="bottom" constant="36" id="tDw-lX-kWp"/>
-                            <constraint firstItem="iD8-pA-suN" firstAttribute="top" secondItem="tNH-Du-Pw2" secondAttribute="bottom" constant="10" id="uAS-Cj-8oO"/>
+                            <constraint firstItem="QC4-Po-XVj" firstAttribute="top" secondItem="krE-HQ-e7N" secondAttribute="bottom" constant="-1" id="wOf-Nr-RbD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hhj-FC-PFN"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Xrq-dE-Ioi" id="BoC-mS-sn2"/>
                         <outlet property="dateLb" destination="QC4-Po-XVj" id="FVT-5r-Wf8"/>
-                        <outlet property="explanatLb" destination="iD8-pA-suN" id="aM0-uB-zOe"/>
+                        <outlet property="scrolText" destination="krE-HQ-e7N" id="b9g-4x-mJm"/>
                         <outlet property="titleLb" destination="GCG-gg-gC8" id="yJ3-zK-d5T"/>
                         <outlet property="viewImage" destination="tNH-Du-Pw2" id="95N-DP-GBT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJQ-dN-gAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="25.35211267605634"/>
+            <point key="canvasLocation" x="2041.875" y="24.295774647887324"/>
         </scene>
     </scenes>
     <resources>
