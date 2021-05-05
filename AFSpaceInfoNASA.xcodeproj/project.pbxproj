@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,20 +12,26 @@
 		43F702CA263C1E57008210D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F702C8263C1E57008210D0 /* Main.storyboard */; };
 		43F702CC263C1E58008210D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F702CB263C1E58008210D0 /* Assets.xcassets */; };
 		43F702CF263C1E58008210D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F702CD263C1E58008210D0 /* LaunchScreen.storyboard */; };
+		4F63CCE99E7FA9DCBB8C9324 /* Pods_AFSpaceInfoNASA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B3D1C137D4FECD1A78C08B /* Pods_AFSpaceInfoNASA.framework */; };
+		C150A4B82641B040005CD80D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150A4B72641B040005CD80D /* NetworkManager.swift */; };
 		C1F5977B263F26C800038516 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F5977A263F26C800038516 /* ShowViewController.swift */; };
-		C1F59780263F289500038516 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F5977F263F289500038516 /* Data.swift */; };
+		C1F59780263F289500038516 /* JsonMaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F5977F263F289500038516 /* JsonMaping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43F702BF263C1E57008210D0 /* SpaceInfoNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceInfoNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B3D1C137D4FECD1A78C08B /* Pods_AFSpaceInfoNASA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFSpaceInfoNASA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D33EDD6A13FC784455B954 /* Pods-AFSpaceInfoNASA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFSpaceInfoNASA.debug.xcconfig"; path = "Target Support Files/Pods-AFSpaceInfoNASA/Pods-AFSpaceInfoNASA.debug.xcconfig"; sourceTree = "<group>"; };
+		43F702BF263C1E57008210D0 /* AFSpaceInfoNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFSpaceInfoNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F702C2263C1E57008210D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F702C4263C1E57008210D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		43F702C9263C1E57008210D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43F702CB263C1E58008210D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F702CE263C1E58008210D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43F702D0263C1E58008210D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C150A4B72641B040005CD80D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C1F5977A263F26C800038516 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
-		C1F5977F263F289500038516 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C1F5977F263F289500038516 /* JsonMaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMaping.swift; sourceTree = "<group>"; };
+		F185FA8F8E02C27568F84577 /* Pods-AFSpaceInfoNASA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFSpaceInfoNASA.release.xcconfig"; path = "Target Support Files/Pods-AFSpaceInfoNASA/Pods-AFSpaceInfoNASA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F63CCE99E7FA9DCBB8C9324 /* Pods_AFSpaceInfoNASA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,29 +49,32 @@
 		43F702B6263C1E57008210D0 = {
 			isa = PBXGroup;
 			children = (
-				43F702C1263C1E57008210D0 /* SpaceInfoNASA */,
+				43F702C1263C1E57008210D0 /* AFSpaceInfoNASA */,
 				43F702C0263C1E57008210D0 /* Products */,
+				FBC71424BF4FD5B578EDE1AA /* Pods */,
+				FBBF648FCEB22C2032C79B5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		43F702C0263C1E57008210D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43F702BF263C1E57008210D0 /* SpaceInfoNASA.app */,
+				43F702BF263C1E57008210D0 /* AFSpaceInfoNASA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43F702C1263C1E57008210D0 /* SpaceInfoNASA */ = {
+		43F702C1263C1E57008210D0 /* AFSpaceInfoNASA */ = {
 			isa = PBXGroup;
 			children = (
-				C1F5977E263F288900038516 /* Data */,
+				C150A4B92641B044005CD80D /* Services */,
+				C1F5977E263F288900038516 /* Models */,
 				43F702D6263C1E95008210D0 /* Supporting */,
 				43F702D7263C1EA1008210D0 /* ViewControllers */,
 				43F702D9263C1EC3008210D0 /* Srotyboards */,
 				43F702D8263C1EAF008210D0 /* Resources */,
 			);
-			path = SpaceInfoNASA;
+			path = AFSpaceInfoNASA;
 			sourceTree = "<group>";
 		};
 		43F702D6263C1E95008210D0 /* Supporting */ = {
@@ -102,32 +112,59 @@
 			path = Srotyboards;
 			sourceTree = "<group>";
 		};
-		C1F5977E263F288900038516 /* Data */ = {
+		C150A4B92641B044005CD80D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C1F5977F263F289500038516 /* Data.swift */,
+				C150A4B72641B040005CD80D /* NetworkManager.swift */,
 			);
-			path = Data;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C1F5977E263F288900038516 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1F5977F263F289500038516 /* JsonMaping.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBBF648FCEB22C2032C79B5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25B3D1C137D4FECD1A78C08B /* Pods_AFSpaceInfoNASA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBC71424BF4FD5B578EDE1AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35D33EDD6A13FC784455B954 /* Pods-AFSpaceInfoNASA.debug.xcconfig */,
+				F185FA8F8E02C27568F84577 /* Pods-AFSpaceInfoNASA.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43F702BE263C1E57008210D0 /* SpaceInfoNASA */ = {
+		43F702BE263C1E57008210D0 /* AFSpaceInfoNASA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43F702D3263C1E58008210D0 /* Build configuration list for PBXNativeTarget "SpaceInfoNASA" */;
+			buildConfigurationList = 43F702D3263C1E58008210D0 /* Build configuration list for PBXNativeTarget "AFSpaceInfoNASA" */;
 			buildPhases = (
+				BDB1B44190CE70DFFCBD1DD7 /* [CP] Check Pods Manifest.lock */,
 				43F702BB263C1E57008210D0 /* Sources */,
 				43F702BC263C1E57008210D0 /* Frameworks */,
 				43F702BD263C1E57008210D0 /* Resources */,
+				7F77FC7CDE0BA30280A7A3CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SpaceInfoNASA;
+			name = AFSpaceInfoNASA;
 			productName = SpaceInfoNASA;
-			productReference = 43F702BF263C1E57008210D0 /* SpaceInfoNASA.app */;
+			productReference = 43F702BF263C1E57008210D0 /* AFSpaceInfoNASA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 43F702BA263C1E57008210D0 /* Build configuration list for PBXProject "SpaceInfoNASA" */;
+			buildConfigurationList = 43F702BA263C1E57008210D0 /* Build configuration list for PBXProject "AFSpaceInfoNASA" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43F702BE263C1E57008210D0 /* SpaceInfoNASA */,
+				43F702BE263C1E57008210D0 /* AFSpaceInfoNASA */,
 			);
 		};
 /* End PBXProject section */
@@ -175,13 +212,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F77FC7CDE0BA30280A7A3CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFSpaceInfoNASA/Pods-AFSpaceInfoNASA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFSpaceInfoNASA/Pods-AFSpaceInfoNASA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFSpaceInfoNASA/Pods-AFSpaceInfoNASA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB1B44190CE70DFFCBD1DD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AFSpaceInfoNASA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43F702BB263C1E57008210D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C150A4B82641B040005CD80D /* NetworkManager.swift in Sources */,
 				43F702C3263C1E57008210D0 /* AppDelegate.swift in Sources */,
-				C1F59780263F289500038516 /* Data.swift in Sources */,
+				C1F59780263F289500038516 /* JsonMaping.swift in Sources */,
 				43F702C5263C1E57008210D0 /* SceneDelegate.swift in Sources */,
 				C1F5977B263F26C800038516 /* ShowViewController.swift in Sources */,
 			);
@@ -327,12 +407,13 @@
 		};
 		43F702D4263C1E58008210D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D33EDD6A13FC784455B954 /* Pods-AFSpaceInfoNASA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7L83V7V4P;
-				INFOPLIST_FILE = SpaceInfoNASA/Supporting/Info.plist;
+				INFOPLIST_FILE = AFSpaceInfoNASA/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,12 +427,13 @@
 		};
 		43F702D5263C1E58008210D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F185FA8F8E02C27568F84577 /* Pods-AFSpaceInfoNASA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7L83V7V4P;
-				INFOPLIST_FILE = SpaceInfoNASA/Supporting/Info.plist;
+				INFOPLIST_FILE = AFSpaceInfoNASA/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43F702BA263C1E57008210D0 /* Build configuration list for PBXProject "SpaceInfoNASA" */ = {
+		43F702BA263C1E57008210D0 /* Build configuration list for PBXProject "AFSpaceInfoNASA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43F702D1263C1E58008210D0 /* Debug */,
@@ -375,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43F702D3263C1E58008210D0 /* Build configuration list for PBXNativeTarget "SpaceInfoNASA" */ = {
+		43F702D3263C1E58008210D0 /* Build configuration list for PBXNativeTarget "AFSpaceInfoNASA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43F702D4263C1E58008210D0 /* Debug */,

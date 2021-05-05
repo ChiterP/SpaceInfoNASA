@@ -11,26 +11,26 @@
         <!--Show View Controller-->
         <scene sceneID="aqY-U3-LDs">
             <objects>
-                <viewController id="2pq-oG-lgO" customClass="ShowViewController" customModule="SpaceInfoNASA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2pq-oG-lgO" customClass="ShowViewController" customModule="AFSpaceInfoNASA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zz-Al-dsI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCG-gg-gC8">
-                                <rect key="frame" x="16" y="16" width="288" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCG-gg-gC8">
+                                <rect key="frame" x="16" y="16" width="288" height="20.5"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD8-pA-suN">
-                                <rect key="frame" x="16" y="375" width="288" height="157"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="expl" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD8-pA-suN">
+                                <rect key="frame" x="16" y="372.5" width="288" height="159.5"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC4-Po-XVj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC4-Po-XVj">
                                 <rect key="frame" x="200" y="536" width="104" height="21"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="150" y="274" width="20" height="20"/>
                             </activityIndicatorView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tNH-Du-Pw2">
-                                <rect key="frame" x="16" y="44" width="288" height="316"/>
+                                <rect key="frame" x="16" y="46.5" width="288" height="316"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="XgV-qH-qj8"/>
                                     <constraint firstAttribute="height" constant="316" id="l34-Hb-4kp"/>
@@ -53,29 +53,29 @@
                         <constraints>
                             <constraint firstItem="QC4-Po-XVj" firstAttribute="top" secondItem="iD8-pA-suN" secondAttribute="bottom" constant="4" id="3K0-jQ-7Z5"/>
                             <constraint firstItem="GCG-gg-gC8" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="16" id="4wi-0Q-LOr"/>
-                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="bottom" secondItem="tNH-Du-Pw2" secondAttribute="bottom" constant="208" id="5EF-Vb-9ft"/>
-                            <constraint firstItem="tNH-Du-Pw2" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="16" id="6HM-6K-Q8u"/>
                             <constraint firstItem="iD8-pA-suN" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="16" id="6l1-Z8-J5v"/>
                             <constraint firstItem="GCG-gg-gC8" firstAttribute="top" secondItem="3Ho-SU-Sum" secondAttribute="top" constant="16" id="Acx-4k-jVs"/>
-                            <constraint firstItem="iD8-pA-suN" firstAttribute="top" secondItem="tNH-Du-Pw2" secondAttribute="bottom" constant="15" id="FVW-la-an5"/>
                             <constraint firstItem="Xrq-dE-Ioi" firstAttribute="centerY" secondItem="3Zz-Al-dsI" secondAttribute="centerY" id="LJe-7F-AzT"/>
+                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="tNH-Du-Pw2" secondAttribute="trailing" constant="16" id="LKg-VT-EW0"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="QC4-Po-XVj" secondAttribute="trailing" constant="16" id="Qwb-x6-B5B"/>
-                            <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="tNH-Du-Pw2" secondAttribute="trailing" constant="16" id="RSy-Wg-Q1M"/>
                             <constraint firstItem="Xrq-dE-Ioi" firstAttribute="centerX" secondItem="3Zz-Al-dsI" secondAttribute="centerX" id="SI5-Oh-nHz"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="GCG-gg-gC8" secondAttribute="trailing" constant="16" id="W9c-9A-qOx"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="bottom" secondItem="QC4-Po-XVj" secondAttribute="bottom" constant="11" id="aAy-Bo-vYu"/>
+                            <constraint firstItem="tNH-Du-Pw2" firstAttribute="top" secondItem="GCG-gg-gC8" secondAttribute="bottom" constant="10" id="fr5-Qf-C0L"/>
                             <constraint firstItem="QC4-Po-XVj" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="200" id="gYl-K4-S52"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="trailing" secondItem="iD8-pA-suN" secondAttribute="trailing" constant="16" id="j5w-ZD-6XF"/>
+                            <constraint firstItem="tNH-Du-Pw2" firstAttribute="leading" secondItem="3Ho-SU-Sum" secondAttribute="leading" constant="16" id="pm0-1F-t7l"/>
                             <constraint firstItem="3Ho-SU-Sum" firstAttribute="bottom" secondItem="iD8-pA-suN" secondAttribute="bottom" constant="36" id="tDw-lX-kWp"/>
+                            <constraint firstItem="iD8-pA-suN" firstAttribute="top" secondItem="tNH-Du-Pw2" secondAttribute="bottom" constant="10" id="uAS-Cj-8oO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hhj-FC-PFN"/>
                     <connections>
                         <outlet property="activityIndicator" destination="Xrq-dE-Ioi" id="BoC-mS-sn2"/>
                         <outlet property="dateLb" destination="QC4-Po-XVj" id="FVT-5r-Wf8"/>
-                        <outlet property="eplanatLb" destination="iD8-pA-suN" id="aM0-uB-zOe"/>
+                        <outlet property="explanatLb" destination="iD8-pA-suN" id="aM0-uB-zOe"/>
                         <outlet property="titleLb" destination="GCG-gg-gC8" id="yJ3-zK-d5T"/>
-                        <outlet property="viewImageLb" destination="tNH-Du-Pw2" id="95N-DP-GBT"/>
+                        <outlet property="viewImage" destination="tNH-Du-Pw2" id="95N-DP-GBT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJQ-dN-gAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
